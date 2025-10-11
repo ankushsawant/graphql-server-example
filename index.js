@@ -47,6 +47,16 @@ const resolvers = {
         }
     },
     Mutation: {
+        addGame(_, args) {
+          let game = {
+            ...args.game,
+            id: Math.floor(Math.random() * 1000).toString()
+          }
+          db.games.push(game)
+
+          return game
+
+        },
         deleteGame(_, args) {
             return db.games.filter((g) => g.id !== args.id)
         }
