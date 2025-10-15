@@ -1,0 +1,17 @@
+query AuthorQuery($id: ID!) {
+  author(id: $id) {
+    id
+    name
+    verified,
+    reviews {
+      rating,
+      content
+    }
+  }
+}
+
+Input/Variables
+
+{
+  "id": "3"
+}

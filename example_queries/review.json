@@ -1,0 +1,23 @@
+query ReviewQuery($id: ID!) {
+  review(id: $id) {
+    rating,
+    content,
+    game {
+      title,
+      platforms,
+      reviews {
+        rating
+      }
+    }
+    author {
+      name,
+      verified
+    }
+  }
+}
+
+Input/Variables
+
+{
+  "id": "1"
+}

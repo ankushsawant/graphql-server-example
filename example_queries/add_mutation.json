@@ -1,0 +1,15 @@
+mutation AddMutation($game: AddGameType!) {
+  addGame(game: $game){
+     title
+     platforms
+  }
+}
+
+Input/Variables
+
+{
+  "game": {
+    "title": "Grand Theft Auto",
+    "platforms": ["Xbox", "PS3"]
+  }
+}

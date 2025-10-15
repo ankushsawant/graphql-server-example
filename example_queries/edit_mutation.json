@@ -1,0 +1,15 @@
+mutation EditMutation($id: ID!, $edits: EditGameType!) {
+  updateGame(id: $id, edits: $edits){
+     title
+     platforms
+  }
+}
+
+Input/Variables
+
+{
+  "edits": {
+    "title": "Super Mario Kart"
+  },
+  "id": "4"
+}

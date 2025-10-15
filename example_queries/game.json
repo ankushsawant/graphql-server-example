@@ -1,0 +1,13 @@
+query GameQuery($id: ID!) {
+  game(id: $id) {
+    id,
+    title,
+    platforms
+  }
+}
+
+Input or Variables
+
+{
+  "id": "2"
+}

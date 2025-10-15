@@ -1,0 +1,13 @@
+mutation DeleteMutation($id: ID!) {
+  deleteGame(id: $id) {
+    id,
+    title,
+    platforms
+  }
+}
+
+Input/Variables
+
+{
+  "id": "1"
+}
